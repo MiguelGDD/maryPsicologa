@@ -13,7 +13,7 @@
           <a href="#sobre-mi">Sobre mí</a>
           <a href="#especialidades-enfoque">Especialidades y enfoque</a>
           <a class="layout__contact-link" href="#contacto">Contacto</a>
-          <a class="layout__cta" href="#contacto">Agenda una sesión</a>
+          <a class="layout__cta" href="#contacto">Agenda tu consulta online</a>
         </nav>
       </div>
     </header>
@@ -35,7 +35,7 @@
 
     <a
       class="layout__whatsapp"
-      href="https://wa.me/5730000000000?text=Hola%20Mar%C3%ADa,%20quisiera%20agendar%20una%20sesi%C3%B3n"
+      href="https://wa.me/5730000000000?text=Hola%20Mar%C3%ADa,%20quisiera%20agendar%20una%20consulta%20psicol%C3%B3gica%20online"
       target="_blank"
       rel="noopener"
       aria-label="Abrir chat de WhatsApp"

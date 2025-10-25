@@ -11,10 +11,11 @@ defineProps({
   <section id="contacto" class="contact">
     <div class="contact__content">
       <div class="contact__intro">
-        <h2>Reserva tu primera sesión</h2>
-        <p>
-          Escríbeme o agenda una videollamada para descubrir cómo puedo acompañarte en este momento vital. La primera
-          sesión está orientada a conocernos, comprender tus objetivos y establecer el mejor plan de trabajo terapéutico.
+      <h2>Reserva tu consulta psicológica online</h2>
+      <p>
+        Escríbeme o agenda una videollamada para descubrir cómo puedo acompañarte en este momento vital. La primera
+        consulta está orientada a conocernos, comprender tus objetivos terapéuticos y establecer el plan de psicoterapia
+        clínica más adecuado para ti.
         </p>
       </div>
       <div class="contact__details">
@@ -31,10 +32,10 @@ defineProps({
           </a>
         </div>
         <div>
-          <p class="contact__label">Ubicación</p>
+          <p class="contact__label">Cobertura</p>
           <p>{{ contact.location }}</p>
-        </div>
       </div>
+    </div>
       <a
         class="contact__cta"
         href="https://calendly.com"

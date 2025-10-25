@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue'
 
 import { useContainer } from '@/shared/di'
 import ContactCard from '@/ui/components/ContactCard.vue'
+import FaqSection from '@/ui/components/FaqSection.vue'
 import ProfileHero from '@/ui/components/ProfileHero.vue'
 import SpecialtySection from '@/ui/components/SpecialtySection.vue'
 
@@ -40,6 +41,7 @@ const contact = computed(() => profile.value?.contact ?? {})
     <template v-else>
       <ProfileHero :profile="profile" />
       <SpecialtySection :specialties="specialties" :approaches="approaches" />
+      <FaqSection />
       <ContactCard :contact="contact" />
     </template>
   </div>

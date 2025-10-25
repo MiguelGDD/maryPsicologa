@@ -14,10 +14,11 @@ defineProps({
 <template>
   <section id="especialidades-enfoque" class="specialty">
     <div class="specialty__intro">
-      <h2>Especialidades y enfoque terapéutico</h2>
+      <h2>Especialidades y enfoque terapéutico en psicología clínica</h2>
       <p>
         Un acompañamiento cercano y profesional para ayudarte a comprender tus emociones, fortalecer tus recursos y
-        trabajar desde metodologías validadas que se adaptan a tu momento vital.
+        trabajar desde metodologías validadas como la terapia cognitivo-conductual, mindfulness y psicología humanista.
+        Cada intervención se diseña pensando en el contexto colombiano y en tus metas personales.
       </p>
     </div>
     <div class="specialty__grid">

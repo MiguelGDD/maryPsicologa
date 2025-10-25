@@ -12,10 +12,10 @@ defineProps({
     <div class="hero__content">
       <p class="hero__eyebrow">Psicología centrada en las personas</p>
       <h1 class="hero__title">
-        {{ profile.name }}
+        {{ profile.name }} · Psicóloga clínica online en Colombia
       </h1>
       <h2 class="hero__subtitle">
-        {{ profile.professionalTitle }}
+        {{ profile.professionalTitle }} especializada en terapia cognitivo-conductual y bienestar emocional
       </h2>
       <p class="hero__summary">
         {{ profile.summary }}

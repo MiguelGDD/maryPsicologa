@@ -5,12 +5,13 @@ const profileData = {
   name: 'María Rojas',
   professionalTitle: 'Psicóloga Clínica y Psicoterapeuta',
   summary:
-    'Acompaño a personas adultas en procesos de cambio personal, gestión emocional y construcción de relaciones más sanas desde un enfoque integrador y humano.',
+    'Psicóloga clínica colegiada en Colombia con énfasis en psicoterapia online para ansiedad, depresión, estrés laboral y relaciones sanas. Trabajo con terapia cognitivo-conductual, mindfulness y herramientas basadas en evidencia adaptadas al contexto colombiano.',
   specialties: [
-    'Ansiedad y manejo del estrés',
-    'Autoestima y autoconocimiento',
-    'Procesos de duelo y transición vital',
-    'Relaciones de pareja y vínculos afectivos',
+    'Trastornos de ansiedad y manejo del estrés crónico',
+    'Depresión, desmotivación y pérdida de sentido vital',
+    'Autoestima, autoconocimiento y proyecto de vida',
+    'Procesos de duelo, transición vital y crisis personales',
+    'Terapia de pareja y fortalecimiento de vínculos afectivos',
   ],
   approaches: [
     'Terapia cognitivo-conductual',
@@ -22,7 +23,7 @@ const profileData = {
     email: 'contacto@mariarojaspsicologa.com',
     phone: '+57 300 000 0000',
     location: 'Consulta psicológica online para Colombia',
-    cta: 'Agenda una sesión',
+    cta: 'Agenda tu consulta online',
   },
 }
 
