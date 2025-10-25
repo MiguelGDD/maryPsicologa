@@ -1,0 +1,31 @@
+{
+  "name": "mary-psicologa",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-vue": "^10.5.1",
+    "globals": "^16.4.0",
+    "vite": "^7.1.11",
+    "vite-plugin-vue-devtools": "^8.0.3"
+  }
+}
