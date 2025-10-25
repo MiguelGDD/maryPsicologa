@@ -170,11 +170,11 @@
 }
 
 @media (min-width: 768px) {
-  .layout__header-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+}
+
+@media (min-width: 1100px) {
+  .layout__nav {
+    gap: 0.75rem clamp(1.5rem, 2.5vw, 2.5rem);
   }
 
   .layout__contact-link {
@@ -185,12 +185,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@media (min-width: 1100px) {
-  .layout__nav {
-    gap: 0.75rem clamp(1.5rem, 2.5vw, 2.5rem);
   }
 }
 </style>
