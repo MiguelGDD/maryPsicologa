@@ -38,13 +38,20 @@ defineProps({
         </ul>
       </article>
     </div>
+    <p class="specialty__note">
+      Cada proceso es personalizado: escogemos técnicas y ritmo de trabajo en conjunto, respetando tus tiempos y objetivos.
+    </p>
   </section>
 </template>
 
 <style scoped>
 .specialty {
   display: grid;
-  gap: clamp(1.75rem, 6vw, 3rem);
+  gap: clamp(2rem, 6vw, 3.5rem);
+  background: radial-gradient(120% 120% at 100% 0%, rgba(126, 108, 255, 0.08) 0%, rgba(249, 249, 255, 0) 62%);
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border-radius: 24px;
+  border: 1px solid rgba(93, 80, 228, 0.08);
 }
 
 .specialty__intro h2 {
@@ -62,14 +69,15 @@ defineProps({
 
 .specialty__grid {
   display: grid;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 4vw, 2rem);
 }
 
 .specialty__card {
   background: #ffffff;
   border-radius: 18px;
-  padding: clamp(1.5rem, 4vw, 2.25rem);
-  box-shadow: 0 25px 50px -30px rgba(33, 31, 84, 0.4);
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+  box-shadow: 0 22px 50px -35px rgba(33, 31, 84, 0.45);
+  border: 1px solid rgba(93, 80, 228, 0.08);
 }
 
 .specialty__card h3 {
@@ -96,10 +104,25 @@ defineProps({
   margin-left: -1rem;
 }
 
+.specialty__note {
+  margin-top: -0.5rem;
+  font-size: 0.95rem;
+  color: rgba(47, 47, 47, 0.75);
+}
+
 @media (min-width: 900px) {
   .specialty__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .specialty {
+    padding: clamp(2.5rem, 4vw, 4rem) clamp(3rem, 5vw, 4.75rem);
+  }
+
+  .specialty__grid {
+    gap: 2.5rem;
   }
 }
 </style>
-

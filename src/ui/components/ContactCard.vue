@@ -10,11 +10,13 @@ defineProps({
 <template>
   <section id="contacto" class="contact">
     <div class="contact__content">
-      <h2>Reserva tu primera sesión</h2>
-      <p>
-        Escríbeme o agenda una videollamada para descubrir cómo puedo acompañarte en este momento vital. La primera
-        sesión está orientada a conocernos, comprender tus objetivos y establecer el mejor plan de trabajo terapéutico.
-      </p>
+      <div class="contact__intro">
+        <h2>Reserva tu primera sesión</h2>
+        <p>
+          Escríbeme o agenda una videollamada para descubrir cómo puedo acompañarte en este momento vital. La primera
+          sesión está orientada a conocernos, comprender tus objetivos y establecer el mejor plan de trabajo terapéutico.
+        </p>
+      </div>
       <div class="contact__details">
         <div>
           <p class="contact__label">Correo</p>
@@ -48,16 +50,35 @@ defineProps({
 <style scoped>
 .contact {
   margin-top: clamp(2rem, 6vw, 4rem);
-  background: linear-gradient(140deg, #5a4ae3 0%, #8a7ff5 100%);
-  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #5a4ae3 0%, #7e6dff 45%, #9a8dff 100%);
+  border-radius: 26px;
   color: #ffffff;
-  padding: clamp(2rem, 6vw, 3.5rem);
+  padding: clamp(2.25rem, 6vw, 3.75rem);
   box-shadow: 0 40px 50px -40px rgba(42, 43, 107, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  inset: auto -10% -35% auto;
+  width: clamp(12rem, 28vw, 18rem);
+  height: clamp(12rem, 28vw, 18rem);
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 65%);
+  transform: rotate(18deg);
+  pointer-events: none;
 }
 
 .contact__content {
   display: grid;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.contact__intro {
+  display: grid;
+  gap: 1rem;
 }
 
 .contact h2 {
@@ -72,7 +93,7 @@ defineProps({
 
 .contact__details {
   display: grid;
-  gap: 1rem;
+  gap: clamp(1rem, 2vw, 1.35rem);
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
@@ -93,7 +114,7 @@ defineProps({
 }
 
 .contact__cta {
-  margin-top: 0.5rem;
+  margin-top: clamp(0.5rem, 2vw, 1.5rem);
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
@@ -106,6 +127,24 @@ defineProps({
   font-weight: 700;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (min-width: 960px) {
+  .contact__content {
+    grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+    align-items: center;
+  }
+
+  .contact__intro {
+    max-width: 480px;
+  }
+
+  .contact__details {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding-left: 1.25rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.28);
+  }
 }
 
 .contact__cta:hover {
