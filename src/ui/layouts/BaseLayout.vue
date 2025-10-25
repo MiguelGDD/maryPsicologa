@@ -3,9 +3,9 @@
     <header class="layout__header">
       <div class="layout__container layout__header-inner">
         <div class="layout__brand">
-          <span class="layout__logo" aria-hidden="true">ML</span>
+          <span class="layout__logo" aria-hidden="true">MR</span>
           <div class="layout__identity">
-            <p class="layout__title">María López Psicología</p>
+            <p class="layout__title">María Rojas Psicología</p>
             <p class="layout__subtitle">Bienestar emocional para una vida más plena</p>
           </div>
         </div>
@@ -27,7 +27,7 @@
 
     <footer class="layout__footer">
       <div class="layout__container layout__footer-inner">
-        <p>© {{ new Date().getFullYear() }} María López Psicóloga. Todos los derechos reservados.</p>
+        <p>© {{ new Date().getFullYear() }} María Rojas Psicóloga. Todos los derechos reservados.</p>
         <p class="layout__footer-contact">
           Consulta online y presencial · Colegio Oficial de Psicólogos de Madrid
         </p>
@@ -108,7 +108,7 @@
   align-items: center;
 }
 
-.layout__nav a {
+.layout__nav a:not(.layout__cta) {
   text-decoration: none;
   font-weight: 500;
   color: #5a4ae3;
@@ -117,10 +117,14 @@
   transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.layout__nav a:hover {
+.layout__nav a:not(.layout__cta):hover {
   border-color: #5a4ae3;
   color: #4336bb;
   transform: translateY(-1px);
+}
+
+.layout__nav a.layout__cta {
+  color: #ffffff;
 }
 
 .layout__cta {
@@ -176,4 +180,3 @@
   }
 }
 </style>
-

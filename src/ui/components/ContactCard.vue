@@ -106,7 +106,7 @@ defineProps({
   margin-bottom: 0.5rem;
 }
 
-.contact a {
+.contact a:not(.contact__cta) {
   color: inherit;
   font-weight: 600;
   text-decoration: underline;

@@ -19,7 +19,7 @@ const profileData = {
     'Psicoterapia humanista',
   ],
   contact: {
-    email: 'contacto@marialopezpsicologa.com',
+    email: 'contacto@mariarojaspsicologa.com',
     phone: '+34 600 000 000',
     location: 'Consulta online y presencial en Madrid',
     cta: 'Agenda una sesión',
