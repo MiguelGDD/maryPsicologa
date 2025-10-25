@@ -28,7 +28,7 @@
       <div class="layout__container layout__footer-inner">
         <p>© {{ new Date().getFullYear() }} María Rojas Psicóloga. Todos los derechos reservados.</p>
         <p class="layout__footer-contact">
-          Consulta online y presencial · Colegio Colombiano de Psicólogos (COLPSIC)
+          Consulta psicológica online · Colegio Colombiano de Psicólogos (COLPSIC)
         </p>
       </div>
     </footer>

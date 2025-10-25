@@ -31,8 +31,8 @@ defineProps({
       </div>
       <div class="hero__card-divider" aria-hidden="true"></div>
       <div class="hero__card-item">
-        <p class="hero__card-title">Consulta híbrida</p>
-        <p class="hero__card-description">Sesiones presenciales en Bogotá y modalidad online segura para Colombia.</p>
+        <p class="hero__card-title">Consulta online</p>
+        <p class="hero__card-description">Modalidad virtual segura y confidencial para toda Colombia.</p>
       </div>
       <div class="hero__card-divider" aria-hidden="true"></div>
       <div class="hero__card-item">

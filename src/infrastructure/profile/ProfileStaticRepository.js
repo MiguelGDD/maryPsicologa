@@ -21,7 +21,7 @@ const profileData = {
   contact: {
     email: 'contacto@mariarojaspsicologa.com',
     phone: '+57 300 000 0000',
-    location: 'Consulta online y presencial en Bogotá',
+    location: 'Consulta psicológica online para Colombia',
     cta: 'Agenda una sesión',
   },
 }
