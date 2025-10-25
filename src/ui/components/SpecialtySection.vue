@@ -12,12 +12,12 @@ defineProps({
 </script>
 
 <template>
-  <section id="especialidades" class="specialty">
+  <section id="especialidades-enfoque" class="specialty">
     <div class="specialty__intro">
-      <h2>Áreas de especialidad</h2>
+      <h2>Especialidades y enfoque terapéutico</h2>
       <p>
-        Un acompañamiento cercano y profesional para ayudarte a comprender tus emociones, fortalecer tus recursos
-        personales y avanzar hacia la vida que deseas vivir.
+        Un acompañamiento cercano y profesional para ayudarte a comprender tus emociones, fortalecer tus recursos y
+        trabajar desde metodologías validadas que se adaptan a tu momento vital.
       </p>
     </div>
     <div class="specialty__grid">
@@ -29,7 +29,7 @@ defineProps({
           </li>
         </ul>
       </article>
-      <article id="enfoque" class="specialty__card">
+      <article class="specialty__card">
         <h3>Enfoque terapéutico</h3>
         <ul>
           <li v-for="item in approaches" :key="item">
@@ -39,7 +39,8 @@ defineProps({
       </article>
     </div>
     <p class="specialty__note">
-      Cada proceso es personalizado: escogemos técnicas y ritmo de trabajo en conjunto, respetando tus tiempos y objetivos.
+      Cada proceso es personalizado: combinamos especialidades y herramientas de nuestro enfoque para diseñar un plan
+      realista, respetando tus tiempos y objetivos.
     </p>
   </section>
 </template>
@@ -52,6 +53,7 @@ defineProps({
   padding: clamp(1.5rem, 5vw, 3rem);
   border-radius: 24px;
   border: 1px solid rgba(93, 80, 228, 0.08);
+  scroll-margin-top: calc(clamp(7rem, 18vw, 10rem) + 25px);
 }
 
 .specialty__intro h2 {

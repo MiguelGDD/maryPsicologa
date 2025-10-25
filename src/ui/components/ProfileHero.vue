@@ -32,7 +32,7 @@ defineProps({
       <div class="hero__card-divider" aria-hidden="true"></div>
       <div class="hero__card-item">
         <p class="hero__card-title">Consulta híbrida</p>
-        <p class="hero__card-description">Sesiones presenciales en Madrid y modalidad online segura.</p>
+        <p class="hero__card-description">Sesiones presenciales en Bogotá y modalidad online segura para Colombia.</p>
       </div>
       <div class="hero__card-divider" aria-hidden="true"></div>
       <div class="hero__card-item">
@@ -49,12 +49,13 @@ defineProps({
   display: grid;
   gap: clamp(2rem, 6vw, 3rem);
   padding-block: clamp(2rem, 6vw, 6rem);
+  scroll-margin-top: calc(clamp(7rem, 18vw, 10rem) + 25px);
 }
 
 .hero::before {
   content: '';
   position: absolute;
-  inset: clamp(-2rem, -4vw, -3rem) clamp(-2rem, -4vw, -3rem) auto clamp(-2rem, -4vw, -3rem);
+  inset: clamp(-2.5rem, -6vw, -1rem) clamp(-1.5rem, -5vw, -0.5rem) auto clamp(-2.5rem, -6vw, -1rem);
   height: clamp(16rem, 30vw, 20rem);
   border-radius: 32px;
   background: linear-gradient(135deg, rgba(90, 74, 227, 0.1) 0%, rgba(126, 108, 255, 0.08) 100%);
@@ -154,7 +155,7 @@ defineProps({
 
   .hero::before {
     height: clamp(18rem, 32vw, 22rem);
-    inset: clamp(-3rem, -4vw, -2rem) -12rem auto clamp(-3rem, -4vw, -2rem);
+    inset: clamp(-3rem, -6vw, -1.5rem) clamp(-2rem, -5vw, -0.75rem) auto clamp(-3rem, -6vw, -1.5rem);
   }
 
   .hero__card {

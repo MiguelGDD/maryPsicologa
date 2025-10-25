@@ -11,9 +11,8 @@
         </div>
         <nav class="layout__nav" aria-label="Secciones principales">
           <a href="#sobre-mi">Sobre mí</a>
-          <a href="#especialidades">Especialidades</a>
-          <a href="#enfoque">Enfoque</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#especialidades-enfoque">Especialidades y enfoque</a>
+          <a class="layout__contact-link" href="#contacto">Contacto</a>
           <a class="layout__cta" href="#contacto">Agenda una sesión</a>
         </nav>
       </div>
@@ -29,7 +28,7 @@
       <div class="layout__container layout__footer-inner">
         <p>© {{ new Date().getFullYear() }} María Rojas Psicóloga. Todos los derechos reservados.</p>
         <p class="layout__footer-contact">
-          Consulta online y presencial · Colegio Oficial de Psicólogos de Madrid
+          Consulta online y presencial · Colegio Colombiano de Psicólogos (COLPSIC)
         </p>
       </div>
     </footer>
@@ -127,7 +126,12 @@
   color: #ffffff;
 }
 
+.layout__contact-link {
+  display: inline-flex;
+}
+
 .layout__cta {
+  display: none;
   border-bottom: none;
   padding: 0.65rem 1.6rem;
   border-radius: 999px;
@@ -171,6 +175,16 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+  }
+
+  .layout__contact-link {
+    display: none;
+  }
+
+  .layout__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

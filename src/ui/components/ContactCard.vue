@@ -58,6 +58,7 @@ defineProps({
   padding: clamp(2.25rem, 6vw, 3.75rem);
   box-shadow: 0 40px 50px -40px rgba(42, 43, 107, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.18);
+  scroll-margin-top: calc(clamp(7rem, 18vw, 10rem) + 25px);
 }
 
 .contact::after {

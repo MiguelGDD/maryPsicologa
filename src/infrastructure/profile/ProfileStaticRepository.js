@@ -20,8 +20,8 @@ const profileData = {
   ],
   contact: {
     email: 'contacto@mariarojaspsicologa.com',
-    phone: '+34 600 000 000',
-    location: 'Consulta online y presencial en Madrid',
+    phone: '+57 300 000 0000',
+    location: 'Consulta online y presencial en Bogotá',
     cta: 'Agenda una sesión',
   },
 }
