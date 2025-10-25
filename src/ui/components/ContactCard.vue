@@ -8,39 +8,45 @@ defineProps({
 </script>
 
 <template>
-  <section id="contacto" class="contact">
+  <section
+    id="contacto"
+    class="contact"
+    aria-labelledby="contacto-titulo"
+    aria-describedby="contacto-descripcion"
+  >
     <div class="contact__content">
       <div class="contact__intro">
-      <h2>Reserva tu consulta psicológica online</h2>
-      <p>
-        Escríbeme o agenda una videollamada para descubrir cómo puedo acompañarte en este momento vital. La primera
-        consulta está orientada a conocernos, comprender tus objetivos terapéuticos y establecer el plan de psicoterapia
-        clínica más adecuado para ti.
+        <h2 id="contacto-titulo">Reserva tu consulta psicológica online</h2>
+        <p id="contacto-descripcion">
+          Escríbeme o agenda una videollamada para descubrir cómo puedo acompañarte en este momento vital. La primera
+          consulta está orientada a conocernos, comprender tus objetivos terapéuticos y establecer el plan de psicoterapia
+          clínica más adecuado para ti.
         </p>
       </div>
       <div class="contact__details">
         <div>
           <p class="contact__label">Correo</p>
-          <a :href="`mailto:${contact.email}`">
+          <a :href="`mailto:${contact.email}`" :title="`Escribir a ${contact.email}`">
             {{ contact.email }}
           </a>
         </div>
         <div>
           <p class="contact__label">Teléfono</p>
-          <a :href="`tel:${contact.phone}`">
+          <a :href="`tel:${contact.phone}`" :title="`Llamar al ${contact.phone}`">
             {{ contact.phone }}
           </a>
         </div>
         <div>
           <p class="contact__label">Cobertura</p>
           <p>{{ contact.location }}</p>
+        </div>
       </div>
-    </div>
       <a
         class="contact__cta"
         href="https://calendly.com"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
+        title="Abrir agenda externa para programar tu consulta"
       >
         {{ contact.cta }}
       </a>

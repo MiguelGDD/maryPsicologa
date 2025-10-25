@@ -1,7 +1,7 @@
 <template>
-  <section id="faq" class="faq">
+  <section id="faq" class="faq" aria-labelledby="faq-titulo">
     <div class="faq__intro">
-      <h2>Preguntas frecuentes sobre la consulta psicológica online</h2>
+      <h2 id="faq-titulo">Preguntas frecuentes sobre la consulta psicológica online</h2>
       <p>
         Resolver tus dudas te ayuda a sentirte más segura al comenzar tu proceso terapéutico. Aquí encontrarás respuestas
         sobre cómo trabajo, qué puedo abordar y cómo reservar tu consulta psicológica online desde cualquier ciudad de Colombia.
@@ -88,4 +88,3 @@
   }
 }
 </style>
-

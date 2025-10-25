@@ -8,20 +8,25 @@ defineProps({
 </script>
 
 <template>
-  <section id="sobre-mi" class="hero">
+  <section
+    id="sobre-mi"
+    class="hero"
+    aria-labelledby="sobre-mi-titulo"
+    aria-describedby="sobre-mi-resumen"
+  >
     <div class="hero__content">
       <p class="hero__eyebrow">Psicología centrada en las personas</p>
-      <h1 class="hero__title">
+      <h1 id="sobre-mi-titulo" class="hero__title">
         {{ profile.name }} · Psicóloga clínica online en Colombia
       </h1>
       <h2 class="hero__subtitle">
         {{ profile.professionalTitle }} especializada en terapia cognitivo-conductual y bienestar emocional
       </h2>
-      <p class="hero__summary">
+      <p id="sobre-mi-resumen" class="hero__summary">
         {{ profile.summary }}
       </p>
-      <a class="hero__cta" href="#contacto">
-        Reserva una sesión
+      <a class="hero__cta" href="#contacto" title="Ir a la sección de contacto para agendar consulta">
+        Agenda tu consulta online
       </a>
     </div>
     <div class="hero__card" role="presentation">
@@ -33,11 +38,6 @@ defineProps({
       <div class="hero__card-item">
         <p class="hero__card-title">Consulta online</p>
         <p class="hero__card-description">Modalidad virtual segura y confidencial para toda Colombia.</p>
-      </div>
-      <div class="hero__card-divider" aria-hidden="true"></div>
-      <div class="hero__card-item">
-        <p class="hero__card-title">Idiomas</p>
-        <p class="hero__card-description">Atención en español e inglés adaptada a cada proceso.</p>
       </div>
     </div>
   </section>

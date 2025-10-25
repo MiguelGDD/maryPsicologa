@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
     <header class="layout__header">
       <div class="layout__container layout__header-inner">
         <div class="layout__brand">
@@ -10,21 +11,21 @@
           </div>
         </div>
         <nav class="layout__nav" aria-label="Secciones principales">
-          <a href="#sobre-mi">Sobre mí</a>
-          <a href="#especialidades-enfoque">Especialidades y enfoque</a>
-          <a class="layout__contact-link" href="#contacto">Contacto</a>
-          <a class="layout__cta" href="#contacto">Agenda tu consulta online</a>
+          <a href="#sobre-mi" title="Ir a la sección sobre mí">Sobre mí</a>
+          <a href="#especialidades-enfoque" title="Ir a la sección de especialidades y enfoque">Especialidades y enfoque</a>
+          <a class="layout__contact-link" href="#contacto" title="Ir a la sección de contacto">Contacto</a>
+          <a class="layout__cta" href="#contacto" title="Agendar consulta psicológica online">Agenda tu consulta online</a>
         </nav>
       </div>
     </header>
 
-    <main class="layout__main">
+    <main id="contenido-principal" class="layout__main" tabindex="-1">
       <div class="layout__container">
         <slot></slot>
       </div>
     </main>
 
-    <footer class="layout__footer">
+    <footer class="layout__footer" role="contentinfo" aria-label="Información legal y datos de contacto">
       <div class="layout__container layout__footer-inner">
         <p>© {{ new Date().getFullYear() }} María Rojas Psicóloga. Todos los derechos reservados.</p>
         <p class="layout__footer-contact">
@@ -38,7 +39,8 @@
       href="https://wa.me/5730000000000?text=Hola%20Mar%C3%ADa,%20quisiera%20agendar%20una%20consulta%20psicol%C3%B3gica%20online"
       target="_blank"
       rel="noopener"
-      aria-label="Abrir chat de WhatsApp"
+      aria-label="Abrir chat de WhatsApp con María Rojas"
+      title="Chatear por WhatsApp con María Rojas"
     >
       <svg
         class="layout__whatsapp-icon"

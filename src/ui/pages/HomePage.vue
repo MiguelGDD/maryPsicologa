@@ -31,10 +31,15 @@ const contact = computed(() => profile.value?.contact ?? {})
 
 <template>
   <div class="home">
-    <div v-if="isLoading" class="home__state">
+    <div
+      v-if="isLoading"
+      class="home__state"
+      role="status"
+      aria-live="polite"
+    >
       <p>Cargando la información...</p>
     </div>
-    <div v-else-if="hasError" class="home__state home__state--error">
+    <div v-else-if="hasError" class="home__state home__state--error" role="alert">
       <p>Lo sentimos, no ha sido posible cargar la información en este momento.</p>
       <p>Por favor, inténtalo de nuevo más tarde.</p>
     </div>
