@@ -32,6 +32,28 @@
         </p>
       </div>
     </footer>
+
+    <a
+      class="layout__whatsapp"
+      href="https://wa.me/5730000000000?text=Hola%20Mar%C3%ADa,%20quisiera%20agendar%20una%20sesi%C3%B3n"
+      target="_blank"
+      rel="noopener"
+      aria-label="Abrir chat de WhatsApp"
+    >
+      <svg
+        class="layout__whatsapp-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75 0 1.723.45 3.379 1.31 4.856L2.25 21.75l4.987-1.273A9.69 9.69 0 0 0 12 21.75c5.385 0 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm0 17.25a7.463 7.463 0 0 1-3.808-1.025l-.272-.16-2.963.756.79-2.9-.177-.3a7.46 7.46 0 0 1-1.12-3.831c0-4.116 3.334-7.45 7.45-7.45s7.45 3.334 7.45 7.45-3.334 7.45-7.45 7.45Zm4.234-5.558c-.232-.116-1.372-.676-1.585-.754-.213-.079-.368-.116-.523.116-.155.232-.602.754-.737.909-.135.155-.271.174-.503.058-.232-.116-.98-.361-1.864-1.15-.689-.615-1.153-1.374-1.288-1.606-.135-.232-.014-.357.102-.472.104-.103.232-.271.348-.406.116-.135.155-.232.232-.387.077-.155.039-.29-.019-.406-.058-.116-.523-1.261-.717-1.725-.189-.454-.382-.392-.523-.4-.135-.007-.29-.009-.445-.009-.155 0-.406.058-.62.29-.213.232-.813.794-.813 1.938s.833 2.249.949 2.405c.116.155 1.639 2.506 3.973 3.514.556.24.99.383 1.328.489.558.177 1.067.152 1.47.092.448-.067 1.372-.56 1.566-1.1.194-.54.194-1.004.135-1.1-.058-.097-.213-.155-.445-.271Z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
   </div>
 </template>
 
@@ -99,6 +121,7 @@
   font-size: 0.95rem;
   color: #5a5a5a;
 }
+
 
 .layout__nav {
   display: flex;
@@ -169,12 +192,48 @@
   color: rgba(67, 60, 150, 0.85);
 }
 
+.layout__whatsapp {
+  position: fixed;
+  bottom: clamp(1rem, 4vw, 1.75rem);
+  right: clamp(1rem, 4vw, 1.75rem);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2cd875 0%, #58e69b 45%, #5a4ae3 100%);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 30px rgba(37, 32, 71, 0.25);
+  text-decoration: none;
+  z-index: 40;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.layout__whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 36px rgba(37, 32, 71, 0.32);
+}
+
+.layout__whatsapp-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 @media (min-width: 768px) {
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1040px) {
+  .layout__header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(2rem, 4vw, 3rem);
+  }
+
   .layout__nav {
     gap: 0.75rem clamp(1.5rem, 2.5vw, 2.5rem);
+    justify-content: flex-end;
   }
 
   .layout__contact-link {
@@ -185,6 +244,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .layout__whatsapp {
+    display: none;
   }
 }
 </style>
